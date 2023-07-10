@@ -6,22 +6,23 @@ int main()
 {
     double money;
     int years;
-    int profit;
+    double profit;
 
     printf("How much money are you investing? ");
-    scanf("%f", &money);
-    
+    scanf("%lf", &money);
+
     printf("For how many years are you investing? ");
     scanf("%d", &years);
 
-    printf("How much is the yearly profit(In percentage)? ");
-    scanf("%f", &profit);
+    printf("How much is the yearly profit (in percentage)? ");
+    scanf("%lf", &profit);
 
     for (size_t i = 0; i < years; i++)
     {
-        money == money + (money*(profit/100));
+        money = money + (money * (profit / 100));
     }
-    printf("%f", money);
     
+    printf("Total money after %d years: %lf\n", years, money);
+
     return 0;
 }
