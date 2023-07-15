@@ -38,16 +38,16 @@ int main()
 
     if (op == '+') {
         int result = sum(a, b);
-        printf("%d", result);
+        printf("%d\n", result);
     } else if (op == '-') {
         int result = subtraction(a, b);
-        printf("%d", result);
+        printf("%d\n", result);
     } else if (op == '/') {
         float result = division(a, b);
-        printf("%f", result);
+        printf("%f\n", result);
     } else if (op == '*') {
         int result = multiplication(a, b);
-        printf("%d", result);
+        printf("%d\n", result);
     } else {
         printf("Invalid input");
     }
