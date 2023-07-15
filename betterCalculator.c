@@ -14,8 +14,8 @@ int multiplication(int num1, int num2) {
     int result = num1 * num2;
     return result;
 }
-int division(int num1, int num2) {
-    float result = num1 / num2;
+double division(double num1, double num2) {
+    double result = num1 / num2;
     return result;
 }
 
@@ -43,7 +43,7 @@ int main()
         int result = subtraction(a, b);
         printf("%d\n", result);
     } else if (op == '/') {
-        float result = division(a, b);
+        double result = division(a, b);
         printf("%f\n", result);
     } else if (op == '*') {
         int result = multiplication(a, b);
